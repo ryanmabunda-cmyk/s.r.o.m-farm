@@ -2,8 +2,7 @@ import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ShoppingCart, X, Plus, Minus, Mail, Leaf, Instagram,  Facebook, ArrowRight } from 'lucide-react';
 import { PRODUCTS, Product } from './constants';
-
-
+import farmerImage from '../pictures/farmer.jpg';
 
 import { Youtube } from 'lucide-react';
 
@@ -208,7 +207,7 @@ export default function App() {
           <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
             <div className="relative">
               <img 
-                src="pictures/farmer.jpg"
+                src={farmerImage}
                 alt="Farmer working" 
                 className="rounded-[40px] shadow-2xl"
                 referrerPolicy="no-referrer"
